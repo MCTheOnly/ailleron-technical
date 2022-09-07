@@ -46,7 +46,7 @@
 	@include flex-center-center;
 	padding: 0 120px;
 	margin-top: 127px;
-	margin-bottom: 100px;
+	margin-bottom: 40px;
 
 	&__column {
 		width: 50%;
@@ -68,6 +68,52 @@
 			img {
 				position: relative;
 				left: -100px;
+			}
+		}
+	}
+}
+
+.counters {
+	@include flex-center-center;
+	flex-direction: column;
+	margin-bottom: 125px;
+
+	h2 {
+		@include MS-Bold-35-43;
+		margin-bottom: 72px;
+	}
+
+	&__wrapper {
+		@include flex-center-center;
+		width: 100%;
+	}
+
+	&__container {
+		@include flex-center-center;
+		width: 25%;
+		flex-direction: column;
+
+		p.counter {
+			@include MS-Bold-65-55;
+			margin: 0 4px;
+		}
+
+		p.counter-info {
+			@include MS-Light-20-24;
+			margin-top: 20px;
+			text-align: center;
+		}
+
+		.string {
+			@include MS-Bold-45-55;
+			display: inline-block;
+
+			&--red {
+				color: $secondary-color;
+			}
+
+			&--black {
+				color: $black;
 			}
 		}
 	}

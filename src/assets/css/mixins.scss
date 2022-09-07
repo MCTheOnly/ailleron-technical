@@ -30,6 +30,12 @@ $transition: 0.4s;
 	line-height: 18px;
 }
 
+@mixin MS-Light-20-24 {
+	font-family: "Montserrat-Light";
+	font-size: 20px;
+	line-height: 24px;
+}
+
 @mixin MS-Medium-20-30 {
 	font-family: "Montserrat-Regular";
 	font-size: 20px;
@@ -46,6 +52,18 @@ $transition: 0.4s;
 	font-family: "Montserrat-Bold";
 	font-size: 70px;
 	line-height: 30px;
+}
+
+@mixin MS-Bold-65-55 {
+	font-family: "Montserrat-Bold";
+	font-size: 65px;
+	line-height: 55px;
+}
+
+@mixin MS-Bold-45-55 {
+	font-family: "Montserrat-Bold";
+	font-size: 45px;
+	line-height: 55px;
 }
 
 @mixin MS-Bold-35-43 {

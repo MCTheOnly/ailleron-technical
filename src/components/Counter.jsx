@@ -3,18 +3,19 @@ import CountUp, { useCountUp } from 'react-countup';
 
 import useIsInViewport from '../hooks/useIsInVieeport';
 
-const Counter = ({ countStart, countEnd, countDuration }) => {
+const Counter = ({ start, end, duration, suffix = '', prefix = '' }) => {
 
 	const counterRef = useRef(null)
 
 	const isVisible = useIsInViewport(counterRef)
 
 	const settings = {
-		start: countStart,
-		end: countEnd,
-		duration: countDuration,
+		start,
+		end,
+		duration,
+		suffix,
+		prefix,
 		ref: counterRef,
-		className: 'counters__counter--container',
 	}
 
 	const { pauseResume } = useCountUp({
@@ -26,9 +27,7 @@ const Counter = ({ countStart, countEnd, countDuration }) => {
 	}, [isVisible])
 
 	return (
-		<div>
-			<h1 ref={counterRef}></h1>
-		</div>
+		<p className='counter' ref={counterRef}></p>
 	)
 }
 
