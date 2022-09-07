@@ -1,5 +1,4 @@
 import React, { useEffect } from "react"
-import { RiNotification3Line } from "react-icons/ri";
 import { AiOutlineMenu } from "react-icons/ai"
 import { Link, NavLink } from "react-router-dom";
 

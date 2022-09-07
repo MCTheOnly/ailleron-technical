@@ -12,16 +12,16 @@
 html,
 body {
 	height: 100%;
+	scroll-behavior: smooth;
 }
 
 body {
-	scroll-behavior: smooth;
 	position: relative;
 	min-height: 100vh;
 }
 
 #root {
-	width: 1366px;
+	width: $content-width;
 	margin: 0 auto;
 }
 
@@ -37,4 +37,30 @@ button {
 
 ul {
 	list-style-type: none;
+}
+
+.contact-button {
+	@include flex-center-center;
+	width: 160px;
+	height: 35px;
+	background-color: $secondary-color;
+	color: $white;
+	border-radius: 15px;
+
+	svg {
+		margin-right: 10px;
+	}
+
+	&:hover {
+		color: $black;
+
+		svg path {
+			stroke: $black;
+		}
+	}
+
+	svg path {
+		stroke: $white;
+		transition: $transition;
+	}
 }

@@ -1,9 +1,14 @@
+/*  variables */
+
 $white: #ffffff;
 $black: #000000;
 $footer-color: #F5F5F5;
 $secondary-color: #D50A0A;
 
+$content-width: 1366px;
 $transition: 0.4s;
+
+/* layout */
 
 @mixin flex-center-between {
 	display: flex;
@@ -18,6 +23,12 @@ $transition: 0.4s;
 }
 
 /*  fonts */
+
+@mixin MS-Light-14-18 {
+	font-family: "Montserrat-Light";
+	font-size: 14px;
+	line-height: 18px;
+}
 
 @mixin MS-Medium-20-30 {
 	font-family: "Montserrat-Regular";
@@ -41,10 +52,4 @@ $transition: 0.4s;
 	font-family: "Montserrat-Bold";
 	font-size: 35px;
 	line-height: 43px;
-}
-
-@mixin MS-Light-14-18 {
-	font-family: "Montserrat-Light";
-	font-size: 14px;
-	line-height: 18px;
 }
