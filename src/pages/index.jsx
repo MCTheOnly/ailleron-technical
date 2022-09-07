@@ -1,0 +1,6 @@
+export { default as Home } from './Home'
+export { default as AboutUs } from './AboutUs'
+export { default as News } from './News'
+export { default as Offer } from './Offer'
+export { default as Partners } from './Partners'
+export { default as ContactUs } from './ContactUs'
