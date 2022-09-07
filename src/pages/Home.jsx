@@ -1,7 +1,6 @@
 import React from 'react'
 
-import { Hero } from '../components/Hero'
-import Carousel from '../components/Carousel'
+import { Hero, Carousel, TwoColumns } from '../components'
 
 import { useStateContext } from '../contexts/ContextProvider'
 
@@ -12,6 +11,7 @@ const Home = () => {
 		<div className={activeMenu ? "home page retracted" : "home page"}>
 			<Hero />
 			<Carousel />
+			<TwoColumns />
 		</div>
 	)
 }

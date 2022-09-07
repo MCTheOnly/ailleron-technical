@@ -1,0 +1,43 @@
+@import './mixins.scss';
+
+.hero {
+	background-image: url("../bg-hero.png");
+	background-repeat: no-repeat;
+	background-size: contain;
+	width: 100%;
+	height: 485px;
+	margin-bottom: 52px;
+
+	&__wrapper {
+		@include flex-center-center;
+		flex-direction: column;
+		height: 100%;
+	}
+
+	h1 {
+		color: $white;
+		margin: 40px 0;
+	}
+
+	p {
+		color: $white;
+		margin-bottom: 62px;
+	}
+}
+
+.slick-track {
+	display: flex;
+	align-items: center;
+
+	.single-slide {
+		display: flex !important;
+		align-items: center;
+		justify-content: center;
+
+		img {
+			width: 80%;
+		}
+	}
+}
+
+.two-columns {}
