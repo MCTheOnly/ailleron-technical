@@ -1,0 +1,76 @@
+@import './mixins.scss';
+
+.sidebar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 250px;
+	height: 100vh;
+	box-shadow: 0 5px 20px 8px rgba(0, 0, 0, 0.1);
+	transition: 0.4s;
+	padding: 10px;
+
+	&.hidden {
+		width: 0;
+		padding: 0;
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__header {
+		@include flex-center-between;
+		position: relative;
+		margin-bottom: 10px;
+		font-size: 22px;
+
+		button {
+			background-color: transparent;
+		}
+
+		svg {
+			font-size: 24px;
+		}
+
+	}
+
+	&__links {
+
+		&--wrapper {
+			display: flex;
+			flex-direction: column;
+			margin-bottom: 10px;
+		}
+	}
+
+	a {
+		display: flex;
+		align-items: center;
+		margin: 3px 0;
+		font-size: 16px;
+		text-transform: capitalize;
+		background-color: transparent;
+		color: #000;
+
+		&:hover {
+			color: blue;
+			background-color: rgba(0, 0, 0, 0.05);
+		}
+	}
+
+	p {
+		margin-top: 10px;
+		margin-bottom: 5px;
+		/* font-weight: 700; */
+		font-size: 16px;
+		text-transform: uppercase;
+		color: rgba(0, 0, 0, 0.5)
+	}
+
+	svg {
+		font-size: 24px;
+		margin-right: 10px;
+	}
+}

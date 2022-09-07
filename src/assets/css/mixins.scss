@@ -1,0 +1,18 @@
+$white: #ffffff;
+$black: #000000;
+$footer-color: #F5F5F5;
+$secondary-color: #D50A0A;
+
+$transition: 0.4s;
+
+@mixin flex-center-between {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+@mixin flex-center-center {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}

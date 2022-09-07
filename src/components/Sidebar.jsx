@@ -29,7 +29,6 @@ const Sidebar = () => {
 							<AiOutlineHome /> Home
 						</Link>
 
-
 						<button type="button" onClick={() => setActiveMenu((prevActiveMenu) => !prevActiveMenu)}>
 							<MdOutlineCancel />
 						</button>

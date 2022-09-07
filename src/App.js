@@ -4,7 +4,7 @@ import { FiSettings } from 'react-icons/fi'
 
 import { Button, Header, Navbar, Sidebar, Footer } from './components'
 import { Home, AboutUs, News, Offer, Partners, ContactUs } from './pages'
-import './App.css'
+import './App.scss'
 
 import { useStateContext } from './contexts/ContextProvider'
 

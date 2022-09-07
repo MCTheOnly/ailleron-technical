@@ -28,7 +28,7 @@ const Navbar = () => {
 	return (
 		<div className="navbar">
 			<NavButton
-				className="menu-button"
+				className="navbar__menu-button"
 				title="Menu"
 				customFunc={() => setActiveMenu((prevActiveMenu) => !prevActiveMenu)}
 				color="#000"

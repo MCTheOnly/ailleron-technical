@@ -1,0 +1,20 @@
+@import './mixins.scss';
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 1366px;
+	padding: 0 80px;
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		background-color: $footer-color;
+		height: 62px;
+		padding: 0 40px;
+		border-radius: 20px;
+	}
+}

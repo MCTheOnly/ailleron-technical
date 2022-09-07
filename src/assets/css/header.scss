@@ -1,0 +1,85 @@
+@import './mixins.scss';
+
+.main-header {
+	@include flex-center-between;
+	padding: 45px 80px 30px 80px;
+	position: fixed;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 1366px;
+	background-color: rgba(255, 255, 255, 0.5);
+	backdrop-filter: blur(10px);
+}
+
+.navbar {
+	@include flex-center-between;
+	gap: 15px;
+	width: 100%;
+
+	&__logo {
+		margin-right: 130px;
+	}
+
+	&__menu-button {
+		display: block;
+	}
+
+	&__links {
+		display: flex;
+		width: 100%;
+
+		&--wrapper {
+			@include flex-center-between;
+			width: 100%;
+			flex-wrap: nowrap;
+
+			a {
+				display: flex;
+				align-items: center;
+				margin: 3px 0;
+				font-size: 16px;
+				text-transform: capitalize;
+				background-color: transparent;
+				color: $black;
+
+				&:hover {
+					color: $secondary-color;
+
+					svg {
+						stroke: $secondary-color;
+					}
+				}
+			}
+
+			svg {
+				font-size: 24px;
+				margin-right: 10px;
+			}
+
+			.contact-button {
+				@include flex-center-center;
+				width: 160px;
+				height: 35px;
+				background-color: $secondary-color;
+				color: $white;
+				border-radius: 15px;
+
+				&:hover {
+					color: $black;
+
+					svg path {
+						stroke: $black;
+					}
+				}
+
+				svg path {
+					stroke: $white;
+					transition: $transition;
+				}
+			}
+		}
+
+	}
+
+}
