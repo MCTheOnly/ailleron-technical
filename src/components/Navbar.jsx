@@ -3,7 +3,7 @@ import { RiNotification3Line } from "react-icons/ri";
 import { AiOutlineMenu } from "react-icons/ai"
 import { Link, NavLink } from "react-router-dom";
 
-import { ReactComponent as Logo } from '../assets/logo.svg';
+import { ReactComponent as Logo } from '../assets/images/logo.svg';
 
 import { useStateContext } from '../contexts/ContextProvider'
 

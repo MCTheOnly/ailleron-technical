@@ -10,6 +10,7 @@
 	width: 1366px;
 	background-color: rgba(255, 255, 255, 0.5);
 	backdrop-filter: blur(10px);
+	z-index: 10;
 }
 
 .navbar {
@@ -35,10 +36,10 @@
 			flex-wrap: nowrap;
 
 			a {
+				@include MS-Medium-13-16;
 				display: flex;
 				align-items: center;
 				margin: 3px 0;
-				font-size: 16px;
 				text-transform: capitalize;
 				background-color: transparent;
 				color: $black;
@@ -53,7 +54,7 @@
 			}
 
 			svg {
-				font-size: 24px;
+				font-size: 18px;
 				margin-right: 10px;
 			}
 

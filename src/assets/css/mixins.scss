@@ -16,3 +16,35 @@ $transition: 0.4s;
 	align-items: center;
 	justify-content: center;
 }
+
+/*  fonts */
+
+@mixin MS-Medium-20-30 {
+	font-family: "Montserrat-Regular";
+	font-size: 20px;
+	line-height: 30px;
+}
+
+@mixin MS-Medium-13-16 {
+	font-family: "Montserrat-Medium";
+	font-size: 13px;
+	line-height: 16px;
+}
+
+@mixin MS-Bold-70-30 {
+	font-family: "Montserrat-Bold";
+	font-size: 70px;
+	line-height: 30px;
+}
+
+@mixin MS-Bold-35-43 {
+	font-family: "Montserrat-Bold";
+	font-size: 35px;
+	line-height: 43px;
+}
+
+@mixin MS-Light-14-18 {
+	font-family: "Montserrat-Light";
+	font-size: 14px;
+	line-height: 18px;
+}

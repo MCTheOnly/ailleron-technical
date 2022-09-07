@@ -2,6 +2,11 @@ import React, { useEffect } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import { FiSettings } from 'react-icons/fi'
 
+import { montserratBold } from './assets'
+import { montserratRegular } from './assets'
+import { montserratThin } from './assets'
+import { montserratMedium } from './assets'
+
 import { Button, Header, Navbar, Sidebar, Footer } from './components'
 import { Home, AboutUs, News, Offer, Partners, ContactUs } from './pages'
 import './App.scss'
