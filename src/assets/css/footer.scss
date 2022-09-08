@@ -55,6 +55,10 @@
 		text-decoration: none;
 		color: $black;
 		@include flex-center-center;
+
+		&:hover {
+			color: $secondary-color;
+		}
 	}
 
 	svg {
