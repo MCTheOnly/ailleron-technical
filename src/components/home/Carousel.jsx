@@ -14,6 +14,32 @@ const Carousel = () => {
 		slidesToScroll: 1,
 		autoplay: true,
 		autoplaySpeed: 1500,
+		responsive: [
+			{
+				breakpoint: 1400,
+				settings: {
+					slidesToShow: 5
+				}
+			},
+			{
+				breakpoint: 1000,
+				settings: {
+					slidesToShow: 4
+				}
+			},
+			{
+				breakpoint: 720,
+				settings: {
+					slidesToShow: 3
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 2
+				}
+			}
+		]
 	};
 
 	return (
