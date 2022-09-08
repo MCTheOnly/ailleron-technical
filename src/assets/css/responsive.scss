@@ -48,13 +48,38 @@
 
 		&__container {
 			width: 100%;
+
+			&:nth-child(-n+3) {
+				&::after {
+					display: none;
+				}
+			}
 		}
 
 		.counter-info {
 			margin-top: 10px;
 		}
 	}
+
+	.footer {
+		padding-bottom: 30px;
+
+		&__wrapper {
+			padding-top: 10px;
+			flex-direction: column;
+			row-gap: 10px;
+
+			>div {
+				@include flex-center-center;
+			}
+		}
+
+		&__social {
+			justify-content: center !important;
+		}
+	}
 }
+
 
 @media only screen and (min-width: 620px) and (max-width: 900px) {
 
@@ -83,6 +108,13 @@
 
 		&__container {
 			width: 50%;
+
+			&:nth-child(-n+3) {
+				&::after {
+					display: none;
+				}
+			}
+
 		}
 
 		.counter-info {
@@ -102,6 +134,17 @@
 
 	.two-columns {
 		padding: 80px;
+	}
+
+	.counters {
+		&__container {
+			&:nth-child(-n+3) {
+				&::after {
+					display: none;
+				}
+			}
+
+		}
 	}
 }
 

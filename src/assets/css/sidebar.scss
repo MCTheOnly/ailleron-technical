@@ -1,6 +1,7 @@
 @import './mixins.scss';
 
 .sidebar {
+	@include MS-Medium-13-16;
 	position: fixed;
 	top: 0;
 	left: 0;

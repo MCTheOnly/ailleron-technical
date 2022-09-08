@@ -8,12 +8,62 @@
 	padding: 0;
 
 	&__wrapper {
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
+		@include flex-center-between;
 		background-color: $footer-color;
 		height: 62px;
 		padding: 0 40px;
 		border-radius: 20px;
+
+		>div {
+			width: 33%;
+
+			&:last-child {
+				display: flex;
+				justify-content: end;
+			}
+		}
+	}
+
+	p {
+		@include MS-Medium-13-16;
+	}
+
+	ul {
+		@include flex-center-center;
+		column-gap: 20px;
+	}
+
+	li {
+		position: relative;
+
+		&:nth-child(-n+2) {
+			&::after {
+				content: '';
+				background-color: $black;
+				width: 1px;
+				height: 80%;
+				position: absolute;
+				right: -11px;
+				top: 50%;
+				transform: translateY(-50%)
+			}
+		}
+	}
+
+	a {
+		@include MS-Medium-13-16;
+		text-decoration: none;
+		color: $black;
+		@include flex-center-center;
+	}
+
+	svg {
+		&.fb {
+			font-size: 20px;
+		}
+
+		&.ig {
+			font-size: 24px;
+		}
 	}
 }

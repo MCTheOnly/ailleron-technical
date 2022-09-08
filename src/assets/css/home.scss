@@ -26,6 +26,12 @@
 		margin-bottom: 62px;
 		text-align: center;
 	}
+
+	.slide-down {
+		position: relative;
+		top: 0;
+		animation: float 6s ease-in-out infinite;
+	}
 }
 
 .slick-track {
@@ -93,6 +99,20 @@
 		@include flex-center-center;
 		width: 25%;
 		flex-direction: column;
+		position: relative;
+
+		&:nth-child(-n+3) {
+			&::after {
+				content: '';
+				background-color: $light-gray;
+				width: 1px;
+				height: 80%;
+				position: absolute;
+				top: -20px;
+				right: 0;
+				transform: rotate(25deg)
+			}
+		}
 
 		p.counter {
 			@include MS-Bold-65-55;
@@ -117,5 +137,19 @@
 				color: $black;
 			}
 		}
+	}
+}
+
+@keyframes float {
+	0% {
+		top: 0;
+	}
+
+	50% {
+		top: 15px;
+	}
+
+	100% {
+		top: 0;
 	}
 }
