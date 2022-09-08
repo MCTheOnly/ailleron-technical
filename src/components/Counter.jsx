@@ -1,7 +1,7 @@
 import React, { useRef, useEffect } from 'react'
 import CountUp, { useCountUp } from 'react-countup';
 
-import useIsInViewport from '../hooks/useIsInVieeport';
+import useIsInViewport from '../hooks/useIsInViewport';
 
 const Counter = ({ start, end, duration, suffix = '', prefix = '' }) => {
 
