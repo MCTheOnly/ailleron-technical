@@ -18,26 +18,29 @@ const NavButton = ({ className, title, customFunc, icon, color, dotColor }) => (
 
 const Navbar = () => {
 
+	const { activeMenu, setActiveMenu, screenSize, setScreenSize, isMobile, setIsMobile } = useStateContext()
+
 	const activeLink = 'true'
 	const normalLink = 'true'
 	const isActive = true
 
-	const { activeMenu, setActiveMenu } = useStateContext()
-
 	return (
-		<div className="navbar">
+		<div className={isMobile ? 'navbar mobile' : 'navbar'}>
 			<NavButton
-				className="navbar__menu-button"
+				className={isMobile ? 'navbar__menu-button' : 'navbar__menu-button hidden'}
 				title="Menu"
 				customFunc={() => setActiveMenu((prevActiveMenu) => !prevActiveMenu)}
 				color="#000"
 				icon={<AiOutlineMenu />} />
 
-			<Link className="navbar__logo" to="/" onClick={() => { }}>
+			<Link
+				className={isMobile ? 'navbar__logo hidden' : 'navbar__logo'}
+				to="/"
+				onClick={() => { }}>
 				<Logo />
 			</Link>
 
-			<nav className="navbar__links">
+			<nav className={isMobile ? 'navbar__links hidden' : 'navbar__links'}>
 				{links && links.map((item) => (
 					<ul key={item.title} className="navbar__links--wrapper">
 						{item.links && item.links.map((link) => (

@@ -1,4 +1,5 @@
 @import './assets/css/mixins.scss';
+@import './assets/css/responsive.scss';
 
 *,
 *::before,
@@ -7,6 +8,10 @@
 	padding: 0;
 	margin: 0;
 }
+
+// html {
+// 	position: relative;
+// }
 
 html,
 body {
@@ -20,7 +25,6 @@ body {
 }
 
 #root {
-	width: $content-width;
 	margin: 0 auto;
 }
 

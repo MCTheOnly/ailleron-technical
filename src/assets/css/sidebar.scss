@@ -9,6 +9,8 @@
 	box-shadow: 0 5px 20px 8px rgba(0, 0, 0, 0.1);
 	transition: 0.4s;
 	padding: 10px;
+	z-index: 50;
+	background-color: $white;
 
 	&.hidden {
 		width: 0;
