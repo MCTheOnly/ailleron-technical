@@ -1,4 +1,4 @@
-import React, { useEffect } from "react"
+import React from "react"
 import { AiOutlineMenu } from "react-icons/ai"
 import { Link, NavLink } from "react-router-dom";
 
@@ -18,7 +18,7 @@ const NavButton = ({ className, title, customFunc, icon, color, dotColor }) => (
 
 const Navbar = () => {
 
-	const { activeMenu, setActiveMenu, screenSize, setScreenSize, isMobile, setIsMobile } = useStateContext()
+	const { setActiveMenu, isMobile } = useStateContext()
 
 	const activeLink = 'true'
 	const normalLink = 'true'

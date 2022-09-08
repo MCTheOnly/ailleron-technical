@@ -1,5 +1,5 @@
 import React, { useRef, useEffect } from 'react'
-import CountUp, { useCountUp } from 'react-countup';
+import { useCountUp } from 'react-countup';
 
 import useIsInViewport from '../hooks/useIsInViewport';
 

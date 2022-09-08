@@ -10,8 +10,7 @@
 	&__wrapper {
 		@include flex-center-between;
 		background-color: $footer-color;
-		height: 62px;
-		padding: 0 40px;
+		padding: 30px 40px;
 		border-radius: 20px;
 
 		>div {

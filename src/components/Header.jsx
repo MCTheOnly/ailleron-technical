@@ -6,7 +6,7 @@ import Navbar from './Navbar'
 
 const Header = () => {
 
-	const { activeMenu, setActiveMenu, screenSize, setScreenSize, isMobile, setIsMobile } = useStateContext()
+	const { screenSize, setScreenSize, isMobile, setIsMobile } = useStateContext()
 
 
 	useEffect(() => {
